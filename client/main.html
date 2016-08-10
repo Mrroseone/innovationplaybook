@@ -1,14 +1,20 @@
     <head>
   <title>digital-innovation-playbook</title>
   <link href='fonts.googleapis.com/css?family=Work+Sans:300,500,700,900,400' rel='stylesheet' type='text/css'>
+  <script src="https://use.typekit.net/dyu5ixz.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body>
 {{> hallo}}
   
 {{> book}}  
+{{> content}}
+
 
 {{> board}}
+
+
 
 </body>
 
@@ -69,6 +75,7 @@
     <div class="ui small icon button primary left floated"><i class="left book icon"></i> BUCH KAUFEN</div>
 
    </div>
+
  </div>
 </div>
 </template>
@@ -95,3 +102,30 @@
  </div>
 
 </template>
+
+<template name="content">
+  <div class="ui three column grid">
+    <div class="column">
+      <div class="ui segment">
+        <img class="ui centered small image" src="/images/icon-intermediate.svg">
+        <h3 class="content-centered">Mehr als 40 Mehoden</h3>
+        <p class="content-centered">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment">
+        <img class="ui centered small image" src="/images/icon-meteor-deep.svg">
+        <h3 class="content-centered">Verschiedene Perspektiven</h3>
+        <p class="content-centered">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment">
+        <img class="ui centered small image" src="/images/icon-todoapp.svg">
+        <h3 class="content-centered">Übergabe Framework</h3>
+        <p class="content-centered">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      </div>
+    </div>
+  </div>
+</template>
+
