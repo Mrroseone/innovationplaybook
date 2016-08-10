@@ -1,25 +1,97 @@
-<head>
-  <title>test3</title>
+    <head>
+  <title>digital-innovation-playbook</title>
+  <link href='fonts.googleapis.com/css?family=Work+Sans:300,500,700,900,400' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+{{> hallo}}
+  
+{{> book}}  
 
-  {{> hello}}
-  {{> info}}
+{{> board}}
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="hallo">
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment">
+
+            <div class="ui container">
+                <div class="ui top fixed large secondary pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="active item">Das Buch</a>
+                    <a class="item">Das Board</a>
+                    <a class="item">Die Autoren</a>
+
+                    
+
+                    <div class="right item">
+                  
+                        <div class="ui medium icon button primary top-btn"><i class="left book icon"></i> BUCH KAUFEN</div>
+
+                        <!-- <a class="ui inverted button">Log in</a>
+                        <a class="ui inverted button">Sign Up</a> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ui text container">
+
+                <img class="ui centered huge image" src="/images/dip_logo_2.png">
+                
+                <h2 class="light narrow-bottom">Das unverzichtbare Arbeitsbuch für Gründer, Macher und Manager.</h2>
+                <h3 class="light narrow-top ">Melde dich kostenlos an und bekomme Zugriff auf über 50 Templates oder lade direkt das Innovations Board herunter.</h3>
+
+                <!--                 {{> atForm state='signUp'}} -->
+                <div class="ui basic large icon button red"><i class="left sign in icon"></i> ANMELDEN FÜR ALLE TEMPLATES</div>
+                <div class="ui basic large icon button primary" type="submit"><i class="left light download icon"></i> BOARD DIREKT DOWNLOADEN</div>
+
+            </div>
+
+        </div>
+    </div>
 </template>
 
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+
+<template name="book">
+    <br> <br>
+   <div class="ui three column centered divided grid">
+   <div class="row">
+ 
+  <div class="six wide column"><img class="ui medium centered image" src="/images/dip-cover.jpg"></div>
+   <div class="eight column">
+       <h2 class="book-left">Mit dem Digital Innovation Playbook wird die Entwicklung neuer Produkte und Services so spielerisch einfach und erfolgreich wie nie zuvor.</h2>
+       <p class="book-left">Mit seinem einmaligen Framework sowie vielen Tools und Methoden ermöglicht es erfolgreiche digitale Innovationsentwicklung – immer und überall.</p><p class="book-left"> Über den gesamten Verlauf der Innovationsentwicklung zeigt es die jeweils besten taktischen Spielzüge für jede Aufgabe und Situation. In einer Weiterentwicklung des Design Thinking orientiert es sich dabei konsequent an der Praxis.</p>
+    <div class="ui small icon button primary left floated"><i class="left book icon"></i> BUCH KAUFEN</div>
+
+   </div>
+ </div>
+</div>
+</template>
+
+
+<template name="board">
+  <div class="ui inverted vertical masthead center aligned segment blue">
+    <br> <br>
+    <div class="ui container inner">             
+      <div class="ui grid">
+        <div class="six wide column">
+         <h2 class="book-left">Das Innovation Board</h2>
+         <p class="book-left"> Mit dem Innovation Board erhalten Innovationsteams und Manager ein Kommunikationsinstrument, das Missverständnisse ausschließt. Es definiert klare Ergebnisschritte und bietet einheitliche Übergabeformate. Das Innovation Board garantiert jederzeit Überblick und Struktur in der Innovationsentwicklung.</p>
+         
+         <div class="ui small icon button red left floated"><i class="left book icon"></i> BOARD DOWNLOADEN
+         </div>
+       </div>
+       <div class="ten wide column"><img class="ui huge centered image" src="/images/dip-board.jpg" data-action="zoom">
+       </div>
+
+     </div>
+   </div>
+
+ </div>
+
 </template>
