@@ -30,6 +30,16 @@
     margin-top: 8em;
 }
 
+.ui.inverted.segment.greys, .ui.primary.inverted.segment.greys {
+    margin-top: 2em;
+    background: rgba(220, 220, 210, 1.0);
+    color: rgba(0, 51, 161, 1.0);
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    margin-top: 8em;
+}
 
 .masthead.segment {
     min-height: 550px;
@@ -60,12 +70,18 @@
 }
 
 .light {
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .narrow-top {
 	margin-top: 0;
 	margin-bottom: 2em;
+}
+
+
+.spacing-top {
+    margin-top: 10em;
+    margin-bottom: 2em;
 }
 
 .narrow-bottom {
@@ -75,6 +91,7 @@
 .book-left {
 	text-align: left;
 }
+
 
 .ui.segment {
 	border: 0px;
@@ -88,4 +105,23 @@
 .ui.menu:not(.vertical) .item > .button {
 
 	margin-right: 1em;
+
+  }  
+
+.ui.block.header.left.blue-text {
+    color: #0039a6;
+    border-radius: none;
+    border: 2px solid #0039a6;
+    background: none;
+
+};
+
+.ui.segment {
+    border-radius: none;
+    border: 2px;
+
+}
+
+.white-text {
+    color: #FFFFFF
 }

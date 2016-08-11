@@ -1,8 +1,9 @@
     <head>
   <title>digital-innovation-playbook</title>
-  <link href='fonts.googleapis.com/css?family=Work+Sans:300,500,700,900,400' rel='stylesheet' type='text/css'>
   <script src="https://use.typekit.net/dyu5ixz.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
 </head>
 
 <body>
@@ -15,7 +16,6 @@
 {{> board}}
 
 
-
 </body>
 
 <template name="hallo">
@@ -23,7 +23,7 @@
         <div class="ui inverted vertical masthead center aligned segment">
 
             <div class="ui container">
-                <div class="ui top fixed large secondary pointing menu">
+                <div class="ui top fixed large stackable secondary pointing menu">
                     <a class="toc item">
                         <i class="sidebar icon"></i>
                     </a>
@@ -45,11 +45,11 @@
 
 
 
-            <div class="ui text container">
+            <div class="ui container">
 
                 <img class="ui centered huge image" src="/images/dip_logo_2.png">
                 
-                <h2 class="light narrow-bottom">Das unverzichtbare Arbeitsbuch für Gründer, Macher und Manager.</h2>
+                <h2 class="narrow-bottom">Das unverzichtbare Arbeitsbuch für Gründer, Macher und Manager.</h2>
                 <h3 class="light narrow-top ">Melde dich kostenlos an und bekomme Zugriff auf über 50 Templates oder lade direkt das Innovations Board herunter.</h3>
 
                 <!--                 {{> atForm state='signUp'}} -->
@@ -82,13 +82,13 @@
 
 
 <template name="board">
-  <div class="ui inverted vertical masthead center aligned segment blue">
+  <div class="ui inverted vertical masthead center aligned segment greys">
     <br> <br>
     <div class="ui container inner">             
       <div class="ui grid">
         <div class="six wide column">
-         <h2 class="book-left">Das Innovation Board</h2>
-         <p class="book-left"> Mit dem Innovation Board erhalten Innovationsteams und Manager ein Kommunikationsinstrument, das Missverständnisse ausschließt. Es definiert klare Ergebnisschritte und bietet einheitliche Übergabeformate. Das Innovation Board garantiert jederzeit Überblick und Struktur in der Innovationsentwicklung.</p>
+         <h4 class="book-left">
+        Mit dem Innovation Board erhalten Innovationsteams und Manager ein Kommunikationsinstrument, das Missverständnisse ausschließt. Es definiert klare Ergebnisschritte und bietet einheitliche Übergabeformate. Das Innovation Board garantiert jederzeit Überblick und Struktur in der Innovationsentwicklung.</h4>
          
          <div class="ui small icon button red left floated"><i class="left book icon"></i> BOARD DOWNLOADEN
          </div>
@@ -104,7 +104,24 @@
 </template>
 
 <template name="content">
-  <div class="ui three column grid">
+  <div class="ui inverted vertical masthead center aligned segment greys">
+  <div class="ui two column grid spacing-top">
+    <div class="column">
+      <div class="text container">
+        <h3 class="ui block header left blue-text"><span class="white-text">Für wen wir dieses Buch geschribene haben.</span> haben Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. natoque penatibus et magnis dis parturient.</h3>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="text container">
+         <h3 class="ui block header left blue-text"><span class="white-text">Warum wir dieses Buch geschrieben haben.</span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</h3>
+      </div>
+    </div>
+
+    </div>
+
+  <div class="ui three column grid spacing-top">
+
     <div class="column">
       <div class="ui segment">
         <img class="ui centered small image" src="/images/icon-intermediate.svg">
@@ -126,6 +143,7 @@
         <p class="content-centered">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
