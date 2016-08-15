@@ -11,3 +11,4 @@ Template.slider.rendered = function() {
       arrows: true
     });
   };
+  
