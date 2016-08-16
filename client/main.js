@@ -17,6 +17,7 @@ Template.layout.rendered = function(){
 
 
 
+
 Template.slider.onRendered(function() {
   console.log('onRendered');
 });
