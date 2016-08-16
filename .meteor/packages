@@ -22,4 +22,7 @@ insecure                # Allow all DB writes from clients (for prototyping)
 flemay:less-autoprefixer
 inno:zoom
 semantic:ui
+accounts-password
+useraccounts:semantic-ui
+iron:router
 udondan:slick
